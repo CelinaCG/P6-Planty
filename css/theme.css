@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+body * {
+   font-family: 'Syne', sans-serif;
+   
+}
+
+/* Header */
+
+.site-title {
+    display: none;
+}
+
+/* Couleurs */
+/* background-color: #ECE2DA; */
+/*  #FFFFFF;
+   #DC9F96;
+   #000000;
+   #326238;
+   #E0B9B4; */
+
+
+
+/* Footer */
+
+.footer-bottom{
+    display: none;
+}
+
+.hfg_footer{
+    display: flex;
+    justify-content: center;
+}
+   
+
+
+
+
+
+
+	
+
+
