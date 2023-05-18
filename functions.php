@@ -6,7 +6,7 @@ function theme_enqueue_styles()
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css');
 }
 
-function register_nav_menus() {
+function register_my_menus() {
     register_nav_menus(
         array(
             'header-menu' => __('Header Menu'),
@@ -14,5 +14,5 @@ function register_nav_menus() {
         )
     );
 }
-add_action('init', 'register_nav_menus');
+add_action('init', 'register_my_menus');
 add_theme_support( 'custom-logo' );
