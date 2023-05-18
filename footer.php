@@ -61,8 +61,11 @@ if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'footer' ) === tru
 
 </div><!--/.wrapper-->
 <?php
+wp_nav_menu( array( 
+	'theme_location' => 'footer-menu' ) ); 
 
 wp_footer();
+
 
 /**
  * Executes actions before the body tag is closed.
