@@ -117,6 +117,11 @@ do_action( 'neve_body_start_after' );
 	?>
 
 	<!-- <main id="content" class="neve-main"> -->
+	<?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+	$custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+	echo ' <a href="'. home_url() .'" ><img class="taille-logo" src="'  . esc_url( $custom_logo_url ) . '" alt=""></a>';
+	?>
+	
 	<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
 
 	<?php wp_nav_menu( array( 
