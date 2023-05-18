@@ -2,6 +2,7 @@
 
 body * {
    font-family: 'Syne', sans-serif;
+
    
 }
 
@@ -10,6 +11,8 @@ body * {
 .site-title {
     display: none;
 }
+
+
 
 /* .container {
     padding-left: 0px;
