@@ -1,9 +1,18 @@
+.builder-item--primary-menu {
+    --hovercolor: #DC9F96;
+    --hovertextcolor: #DC9F96;
+    --activecolor: #DC9F96;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
 body * {
    font-family: 'Syne', sans-serif;
+}
 
-   
+
+.single-page-container {
+    background-color: #ECE2DA;
 }
 
 /* Header */
@@ -12,16 +21,29 @@ body * {
     display: none;
 }
 
+.container {
+    padding: 0px;
+}
 
+.builder-item {
+    margin: 0px;
+}
 
-/* .container {
-    padding-left: 0px;
-    padding-right: 0px;
-} */
+.primary-menu-ul:nth-child(2) {
+    background-color: #DC9F96;
+}
+ 
+a.primary-menu-ul:nth-child(2) {
+    color:#FFFFFF;
+}
 
-/* li.menu-item-29 a{
+.hfg_header.site-header {
+    box-shadow: none;
+}
+
+li.menu-item-29 a{
     color: #000000;
-} */
+}
 
 li.menu-item-29 a:hover {
     font-weight: 700;
@@ -30,23 +52,35 @@ li.menu-item-29 a:hover {
 
 .menu-item {
     padding: 18px 25px;
-   
-   
 }
 
 li.menu-item-30 {
     background-color: #DC9F96;
-    /* padding: 15px 25px; */
+    /* color: #FFFF; */
     font-weight: 700;
-    color: #FFFF;
-}
+}   
+ 
 
 li.menu-item-30:hover {
     background-color: #C02E44;
-    /* padding: 15px 25px; */
     font-weight: 700;
-    color: #FFFF;
-    
+    /* color: #FFFF;  */
+}
+
+/* Bouton commander */
+
+li:nth-child(2) {
+    --hovercolor:#FFFFFFFF;
+    --hovertextcolor: #FFFFFFFF;
+    --activecolor:#FFFFFFFF;
+}
+
+/* Bouton "Nous rencontrer" */
+
+li:nth-child(1) {
+    --hovercolor:#000000;
+    --hovertextcolor: #000000;
+    --activecolor:#000000;
 }
 
 
@@ -54,11 +88,11 @@ li.menu-item-30:hover {
 
 /* Footer */
 
-.footer-bottom{
+.footer-bottom {
     display: none;
 }
 
-.hfg_footer{
+.hfg_footer {
     display: flex;
     justify-content: center;
 }
