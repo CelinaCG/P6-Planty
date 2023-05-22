@@ -38,12 +38,14 @@ body * {
 }
 
 li.menu-nous-rencontrer a{
-    color: #000000;
+    --color: #000000;
 }
 
 li.menu-nous-rencontrer a:hover {
     font-weight: var(--font-weight);
-    color: #000000;
+    --hovercolor:#000000;
+    --hovertextcolor: #000000;
+    --activecolor:#000000;
 }
 
 .menu-item {
