@@ -10,6 +10,10 @@ body * {
    font-family: 'Syne', sans-serif;
 }
 
+:root{
+    --font-weight: 700;
+}
+
 
 .single-page-container {
     background-color: #ECE2DA;
@@ -29,24 +33,16 @@ body * {
     margin: 0px;
 }
 
-.primary-menu-ul:nth-child(2) {
-    background-color: #DC9F96;
-}
- 
-a.primary-menu-ul:nth-child(2) {
-    color:#FFFFFF;
-}
-
 .hfg_header.site-header {
     box-shadow: none;
 }
 
-li.menu-item-29 a{
+li.menu-nous-rencontrer a{
     color: #000000;
 }
 
-li.menu-item-29 a:hover {
-    font-weight: 700;
+li.menu-nous-rencontrer a:hover {
+    font-weight: var(--font-weight);
     color: #000000;
 }
 
@@ -54,36 +50,21 @@ li.menu-item-29 a:hover {
     padding: 18px 25px;
 }
 
-li.menu-item-30 {
+li.btn-menu-commander {
     background-color: #DC9F96;
-    /* color: #FFFF; */
-    font-weight: 700;
+    --color: #FFFF;
+    font-weight: var(--font-weight);
 }   
  
 
-li.menu-item-30:hover {
+li.btn-menu-commander:hover {
     background-color: #C02E44;
-    font-weight: 700;
-    /* color: #FFFF;  */
-}
-
-/* Bouton commander */
-
-li:nth-child(2) {
+    font-weight: var(--font-weight);
     --hovercolor:#FFFFFFFF;
     --hovertextcolor: #FFFFFFFF;
     --activecolor:#FFFFFFFF;
 }
-
-/* Bouton "Nous rencontrer" */
-
-li:nth-child(1) {
-    --hovercolor:#000000;
-    --hovertextcolor: #000000;
-    --activecolor:#000000;
-}
-
-
+/* 
 
 
 /* Footer */
