@@ -1,9 +1,3 @@
-.builder-item--primary-menu {
-    --hovercolor: #DC9F96;
-    --hovertextcolor: #DC9F96;
-    --activecolor: #DC9F96;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
 body * {
@@ -11,7 +5,8 @@ body * {
 }
 
 :root{
-    --font-weight: 700;
+    --font-weight-700: 700;
+    --font-size-commander: 16px;
 }
 
 
@@ -39,13 +34,15 @@ body * {
 
 li.menu-nous-rencontrer a{
     --color: #000000;
+    font-size: 16px;
 }
 
 li.menu-nous-rencontrer a:hover {
-    font-weight: var(--font-weight);
+    font-size: 13px;
+    font-weight: var(--font-weight-700);
     --hovercolor:#000000;
     --hovertextcolor: #000000;
-    --activecolor:#000000;
+    --activecolor:#DC9F96;
 }
 
 .menu-item {
@@ -55,18 +52,22 @@ li.menu-nous-rencontrer a:hover {
 li.btn-menu-commander {
     background-color: #DC9F96;
     --color: #FFFF;
-    font-weight: var(--font-weight);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-commander);
 }   
  
 
 li.btn-menu-commander:hover {
     background-color: #C02E44;
-    font-weight: var(--font-weight);
+    font-weight: var(--font-weight-700);
     --hovercolor:#FFFFFFFF;
     --hovertextcolor: #FFFFFFFF;
     --activecolor:#FFFFFFFF;
+    font-size: var(--font-size-commander);
+    
 }
-/* 
+
+.nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color:#FFFFFF;} 
 
 
 /* Footer */
