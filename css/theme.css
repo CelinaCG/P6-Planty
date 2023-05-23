@@ -40,9 +40,7 @@ li.menu-nous-rencontrer a{
 li.menu-nous-rencontrer a:hover {
     font-size: 13px;
     font-weight: var(--font-weight-700);
-    --hovercolor:#000000;
     --hovertextcolor: #000000;
-    --activecolor:#DC9F96;
 }
 
 .menu-item {
