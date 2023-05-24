@@ -20,6 +20,10 @@ body * {
     display: none;
 }
 
+.site-logo {
+    margin-left: 37px;
+}
+
 .container {
     padding: 0px;
 }
@@ -35,6 +39,7 @@ body * {
 li.menu-nous-rencontrer a{
     --color: #000000;
     font-size: 16px;
+    font-weight: 400;
 }
 
 li.menu-nous-rencontrer a:hover {
