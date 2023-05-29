@@ -83,6 +83,50 @@ li.btn-menu-commander:hover {
     display: flex;
     justify-content: center;
 }
+
+/* Formulaire de contact */
+
+.wpcf7.js{
+    display: flex;
+    justify-content: center;
+}
+.wpcf7-text {
+    font-size: 20px;
+    font-weight: 800;
+  
+}
+
+
+.ft-label{
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.message-label {
+    width: 100%;
+}
+
+.wpcf7-textarea {
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    width: 100%;
+}
+
+label {margin-bottom: 10px;}
+/* .bt-envoyer {background: #E0B9B4;} */
+
+/* 
+.wpcf7-form-control {
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+} */
+
+.wpcf7-submit {
+    background: #E0B9B4;
+}
+    
+
    
 
 
