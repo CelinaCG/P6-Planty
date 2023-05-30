@@ -7,14 +7,25 @@ body * {
 :root{
     --font-weight-700: 700;
     --font-size-commander: 16px;
-}
+    --primarybtncolor: #ffffff;
+    --primarybtnbg: #E0B9B4;
+    --primarybtnhoverbg: var(--e-global-color-custom3);
+    --bodyfontfamily: 'Syne', sans-serif;
+    --primarybtnborderradius: 5px;
+    --btnfontweight: 400;
+    --btnfs: 15px;
 
+}
 
 .single-page-container {
     background-color: #ECE2DA;
 }
 
 /* Header */
+
+header {
+    height: 80px;
+}
 
 .site-title {
     display: none;
@@ -50,6 +61,7 @@ li.menu-nous-rencontrer a:hover {
 
 .menu-item {
     padding: 18px 25px;
+    margin:0px;
 }
 
 li.btn-menu-commander {
@@ -64,6 +76,7 @@ li.btn-menu-commander:hover {
     background-color: #C02E44;
     font-weight: var(--font-weight-700);
     --hovercolor:#FFFFFFFF;
+
     --hovertextcolor: #FFFFFFFF;
     --activecolor:#FFFFFFFF;
     font-size: var(--font-size-commander);
@@ -90,11 +103,11 @@ li.btn-menu-commander:hover {
     display: flex;
     justify-content: center;
 }
-.wpcf7-text {
-    font-size: 20px;
-    font-weight: 800;
+.wpcf7-form {
+   border-radius: 7px;
+    /* box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04); */
   
-}
+} 
 
 
 .ft-label{
@@ -103,9 +116,6 @@ li.btn-menu-commander:hover {
     
 }
 
-.message-label {
-    width: 100%;
-}
 
 .wpcf7-textarea {
     border-radius: 7px;
@@ -113,18 +123,14 @@ li.btn-menu-commander:hover {
     width: 100%;
 }
 
-label {margin-bottom: 10px;}
-/* .bt-envoyer {background: #E0B9B4;} */
-
-/* 
-.wpcf7-form-control {
-    border-radius: 7px;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-} */
-
 .wpcf7-submit {
-    background: #E0B9B4;
+    background: var(--primarybtnbg);
+    color: var(--primarybtncolor);
+    font-family: var(--bodyfontfamily);
+    
+    
 }
+
     
 
    
