@@ -14,6 +14,7 @@ body * {
     --primarybtnborderradius: 5px;
     --btnfontweight: 400;
     --btnfs: 15px;
+    --formfieldborderradius: 7px;
 
 }
 
@@ -60,7 +61,7 @@ li.menu-nous-rencontrer a:hover {
 }
 
 .menu-item {
-    padding: 18px 25px;
+    padding: 25px 25px;
     margin:0px;
 }
 
@@ -76,15 +77,17 @@ li.btn-menu-commander:hover {
     background-color: #C02E44;
     font-weight: var(--font-weight-700);
     --hovercolor:#FFFFFFFF;
-
     --hovertextcolor: #FFFFFFFF;
     --activecolor:#FFFFFFFF;
     font-size: var(--font-size-commander);
     
 }
 
-.nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color:#FFFFFF;} 
+.nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color:#FFFFFF;}
 
+.nav-menu-primary ul {
+    height: 80px;
+}
 
 /* Footer */
 
@@ -103,32 +106,32 @@ li.btn-menu-commander:hover {
     display: flex;
     justify-content: center;
 }
-.wpcf7-form {
-   border-radius: 7px;
-    /* box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04); */
-  
-} 
-
 
 .ft-label{
     font-size: 20px;
     font-weight: 400;
-    
+    margin-bottom: 13px;
 }
 
-
-.wpcf7-textarea {
-    border-radius: 7px;
+.border-input {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-    width: 100%;
 }
 
 .wpcf7-submit {
     background: var(--primarybtnbg);
     color: var(--primarybtncolor);
     font-family: var(--bodyfontfamily);
-    
-    
+    width: 198px;
+    height: 55px;
+}
+
+.bt-envoyer {
+    display: flex;
+    justify-content: center;
+}
+
+.wpcf7-spinner {
+    display: none;
 }
 
     
