@@ -134,6 +134,69 @@ li.btn-menu-commander:hover {
     display: none;
 }
 
+/* Page commander */
+
+/* Quantité */
+
+.quantite {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-zero {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px 0px 0px 5px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-zero:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.plus-moins {
+    flex-direction: column;
+    display: flex;
+    line-height: 2px;
+    margin-right: 11px;
+}
+
+.btn-plus {
+    border-radius: 0px 5px 0px 0px;
+    border-bottom: #ffffff 1px solid;
+    background: #DC9F96;
+    height: 20px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+.btn-plus:hover {
+    background: #DC9F96;
+}
+
+.btn-moins {
+    border-radius: 0px 0px 5px 0px;
+    background: #DC9F96;
+    height: 20px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+.btn-moins:hover {
+    background: #DC9F96;
+}
+
+.btn-validation {
+    width: 100px;
+}
+
     
 
    
