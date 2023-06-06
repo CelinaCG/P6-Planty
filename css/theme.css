@@ -197,7 +197,47 @@ li.btn-menu-commander:hover {
     width: 100px;
 }
 
-    
+/* Formulaire de commande */
+
+.group-form {
+    color: #ffffff;
+    display: flex;
+
+}
+
+.titre-form-commande {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.border-form {
+    border: #ffffff solid 1px;
+    margin: 0px 40px 0px 40px;
+}
+
+.bt-envoyer {
+    margin: 40px 0px;
+}
+ 
+
+/* Responsive */
+
+/* Formulaire commander */
+
+@media screen and (max-width: 1024px) {
+    .group-form {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .group-form {
+        display: block;
+    }
+    .border-form {
+        margin: 10px 10px;
+    }
+}
 
    
 
