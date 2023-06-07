@@ -100,6 +100,10 @@ li.btn-menu-commander:hover {
     justify-content: center;
 }
 
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0px;
+}
+
 /* Formulaire de contact */
 
 .wpcf7.js{
@@ -225,9 +229,9 @@ li.btn-menu-commander:hover {
 /* Formulaire commander */
 
 @media screen and (max-width: 1024px) {
-    .group-form {
+    /* .group-form {
         display: block;
-    }
+    } */
 }
 
 @media screen and (max-width: 767px) {
