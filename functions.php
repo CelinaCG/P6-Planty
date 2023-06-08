@@ -26,7 +26,7 @@ function add_admin_menu( $items) {
     }
     // Sinon, pas d'affichage du menu et lien admin
     else {
-        add_filter( 'wp_nav_menu_items', 'add_admin_menu', 11 );
+        add_filter( 'wp_nav_menu_items');
     }
 }
 
