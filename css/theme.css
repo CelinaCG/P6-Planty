@@ -7,8 +7,8 @@ body * {
 :root{
     --font-weight-700: 700;
     --font-size-commander: 16px;
-    --primarybtncolor: #ffffff;
-    --primarybtnbg: #E0B9B4;
+    --primarybtncolor: var(--nv-site-bg);
+    --primarybtnbg: var(--custom-6);
     --primarybtnhoverbg: var(--e-global-color-custom3);
     --bodyfontfamily: 'Syne', sans-serif;
     --primarybtnborderradius: 5px;
@@ -19,7 +19,7 @@ body * {
 }
 
 .single-page-container {
-    background-color: #ECE2DA;
+    background-color: var(--wp--preset--color--custom-1);
 }
 
 /* Header */
@@ -49,7 +49,7 @@ header {
 }
 
 li.menu-nous-rencontrer a{
-    --color: #000000;
+    --color: var(--nv-text-color);
     font-size: 16px;
     font-weight: 400;
 }
@@ -57,33 +57,33 @@ li.menu-nous-rencontrer a{
 li.menu-nous-rencontrer a:hover {
     font-size: 13px;
     font-weight: var(--font-weight-700);
-    --hovertextcolor: #000000;
+    --hovertextcolor: var(--nv-text-color);
 }
 
 .menu-item {
     padding: 25px 25px;
-    margin:0px;
+    margin: 0px;
 }
 
 li.btn-menu-commander {
-    background-color: #DC9F96;
-    --color: #FFFF;
+    background-color: var(--e-global-color-custom2);
+    --color: var(--nv-site-bg);
     font-weight: var(--font-weight-700);
     font-size: var(--font-size-commander);
 }   
  
 
 li.btn-menu-commander:hover {
-    background-color: #C02E44;
+    background-color: var(--wp--preset--color--custom-3);
     font-weight: var(--font-weight-700);
-    --hovercolor:#FFFFFFFF;
-    --hovertextcolor: #FFFFFFFF;
-    --activecolor:#FFFFFFFF;
+    --hovercolor:var(--nv-site-bg);
+    --hovertextcolor: var(--nv-site-bg);
+    --activecolor:var(--nv-site-bg);
     font-size: var(--font-size-commander);
     
 }
 
-.nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color:#FFFFFF;}
+.nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color: var(--primarybtncolor);}
 
 .nav-menu-primary ul {
     height: 80px;
@@ -148,8 +148,8 @@ li.btn-menu-commander:hover {
 }
 
 .btn-zero {
-    background: #ffffff;
-    color: #000000;
+    background: var(--primarybtncolor);
+    color: var(--nv-text-color);
     border-radius: 5px 0px 0px 5px;
     width: 50px;
     display: flex;
@@ -157,8 +157,8 @@ li.btn-menu-commander:hover {
 }
 
 .btn-zero:hover {
-    background: #ffffff;
-    color: #000000;
+    background: var(--primarybtncolor);
+    color: var(--nv-text-color);
 }
 
 .plus-moins {
@@ -170,8 +170,8 @@ li.btn-menu-commander:hover {
 
 .btn-plus {
     border-radius: 0px 5px 0px 0px;
-    border-bottom: #ffffff 1px solid;
-    background: #DC9F96;
+    border-bottom: var(--primarybtncolor) 1px solid;
+    background:var(--e-global-color-custom2);
     height: 20px;
     width: 30px;
     display: flex;
@@ -180,12 +180,12 @@ li.btn-menu-commander:hover {
 }
 
 .btn-plus:hover {
-    background: #DC9F96;
+    background: var(--e-global-color-custom2);
 }
 
 .btn-moins {
     border-radius: 0px 0px 5px 0px;
-    background: #DC9F96;
+    background: var(--e-global-color-custom2);
     height: 20px;
     width: 30px;
     display: flex;
@@ -194,7 +194,7 @@ li.btn-menu-commander:hover {
 }
 
 .btn-moins:hover {
-    background: #DC9F96;
+    background: var(--e-global-color-custom2);
 }
 
 .btn-validation {
@@ -204,7 +204,7 @@ li.btn-menu-commander:hover {
 /* Formulaire de commande */
 
 .group-form {
-    color: #ffffff;
+    color: var(--primarybtncolor);
     display: flex;
 
 }
@@ -215,7 +215,7 @@ li.btn-menu-commander:hover {
 }
 
 .border-form {
-    border: #ffffff solid 1px;
+    border: var(--primarybtncolor) solid 1px;
     margin: 0px 40px 0px 40px;
 }
 
