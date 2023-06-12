@@ -226,20 +226,42 @@ li.btn-menu-commander:hover {
 
 /* Responsive */
 
-/* Formulaire commander */
-
 @media screen and (max-width: 1024px) {
-    /* .group-form {
-        display: block;
-    } */
+    .laurier {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    /* Formulaire commander */
     .group-form {
         display: block;
     }
+
     .border-form {
         margin: 10px 10px;
+    }
+
+    .laurier {
+        display: none;
+    }
+
+    .fleur {
+       display: none;
+    }
+
+    .votre-commande{
+        display: flex;
+        justify-content: center;
+    }
+
+    .quantite {
+        margin-bottom: 20px;
+    }
+
+    .titre-form-commande {
+        display: flex;
+        justify-content: center;
     }
 }
 
