@@ -222,6 +222,8 @@ li.btn-menu-commander:hover {
 .bt-envoyer {
     margin: 40px 0px;
 }
+
+.menu-mobile {display:block;}
  
 
 /* Responsive */
