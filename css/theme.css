@@ -24,16 +24,21 @@ body * {
 
 /* Header */
 
-header {
+.header {
     height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.site-title {
-    display: none;
+.css-logo {
+    display: flex;
+    align-items: center;
 }
 
 .site-logo {
     margin-left: 37px;
+    display: flex;
+    width: 192px;
 }
 
 .container {
@@ -88,6 +93,15 @@ li.btn-menu-commander:hover {
 .nav-menu-primary ul {
     height: 80px;
 }
+
+.header-menu {
+    display: flex;
+
+}
+
+.header-menu :nth-child(1) { order: 1; }
+.header-menu :nth-child(2) { order: 3; }
+.header-menu :nth-child(3) { order: 2; }
 
 /* Footer */
 
@@ -223,9 +237,6 @@ li.btn-menu-commander:hover {
     margin: 40px 0px;
 }
 
-.menu-mobile {display:block;}
- 
-
 /* Responsive */
 
 @media screen and (max-width: 1024px) {
@@ -262,6 +273,21 @@ li.btn-menu-commander:hover {
     }
 
     .titre-form-commande {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        flex-direction: column;
+        height: 120px;
+        margin: 20px 0 0 20px;
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .css-logo {
         display: flex;
         justify-content: center;
     }
