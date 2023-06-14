@@ -19,16 +19,36 @@ add_action('init', 'register_my_menus');
 // Hook admin
 
 
-add_filter('wp_nav-menu_items', 'add_admin_menu', 10, 2);
+add_filter('wp_nav_menu_items', 'add_admin_menu', 10, 2);
 
 function add_admin_menu($items, $args) {
     // Vérifier si utilisateur est connecté
     if (is_user_logged_in() && $args->theme_location == 'header-menu') {
         // Donner accès à un menu admin et l'URL du tableau de bord WP et afficher le lien dans le menu
-        $items .= '<li><a href="'. get_admin_url('http://planty2.local/wp-admin/') .'">Admin</a></li>';
+        $items .= '<li class="menu-nous-rencontrer menu-item"><a href="'. admin_url() .'">Admin</a></li>';
     }
     return $items;
     // Sinon, pas d'affichage du menu et lien admin
     
 }
 
+// Personnalisation du thème
+function montheme_customize_register($wp_customize)
+{
+	// Ajout d'une section pour le logo personnalisé
+	$wp_customize->add_section('montheme_logo_section', array(
+		'title'      => __('Logo personnalisé', 'montheme'),
+		'priority'   => 30,
+	));
+
+	// Ajout de la fonctionnalité de logo personnalisé
+	$wp_customize->add_setting('montheme_logo');
+
+	// Ajout du contrôle pour téléverser le logo personnalisé
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'montheme_logo', array(
+		'label'    => __('Téléverser votre logo', 'montheme'),
+		'section'  => 'montheme_logo_section',
+		'settings' => 'montheme_logo',
+	)));
+}
+add_action('customize_register', 'montheme_customize_register');
