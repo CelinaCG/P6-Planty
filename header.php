@@ -74,49 +74,21 @@ do_action( 'neve_body_start_after' );
 	?>
 
 	<header class="<?php echo esc_attr( $header_classes ); ?>" <?php echo ( neve_is_amp() ) ? 'next-page-hide' : ''; ?> >
-		
-		<?php
+		<div class="css-logo" id="logo">
+			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img class="site-logo" src="<?php echo get_theme_mod('montheme_logo'); ?>" alt=""></a>
+		</div>
+		<nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<?php wp_nav_menu(array(
+				'theme_location' => 'header-menu',
+				'menu_class' => 'header-menu', // Classe CSS pour le menu
+				
+			)); ?>
+		</nav>
 
-		/**
-		 * Executes actions before the header ( navigation ) area.
-		 *
-		 * @since 1.0.0
-		 */
-		do_action( 'neve_before_header_hook' );
-
-		if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'header' ) === true ) {
-			do_action( 'neve_do_header' );
-		}
-
-		/**
-		 * Executes actions after the header ( navigation ) area.
-		 *
-		 * @since 1.0.0
-		 */
-		do_action( 'neve_after_header_hook' );
-		?>
 	</header>
 
-	<?php
-	/**
-	 * Executes actions after the header tag is closed.
-	 *
-	 * @since 2.7.2
-	 */
-	do_action( 'neve_after_header_wrapper_hook' );
-	?>
 
 
-	<?php
-	/**
-	 * Executes actions before main tag is opened.
-	 *
-	 * @since 1.0.4
-	 */
-	do_action( 'neve_before_primary' );
-	?>
-
-	<!-- <main id="content" class="neve-main"> -->
 	
 	<?php
 /**
