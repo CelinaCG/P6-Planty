@@ -26,8 +26,10 @@ body * {
 
 .header {
     height: 80px;
+    width: 1440px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
 
 .css-logo {
@@ -85,8 +87,9 @@ li.btn-menu-commander:hover {
     --hovertextcolor: var(--nv-site-bg);
     --activecolor:var(--nv-site-bg);
     font-size: var(--font-size-commander);
-    
 }
+
+.btn-menu-commander a { color: white; }
 
 .nav-ul li.btn-menu-commander>.wrap>a:not([href*="#"]){ color: var(--primarybtncolor);}
 
@@ -280,11 +283,12 @@ li.btn-menu-commander:hover {
     .header {
         flex-direction: column;
         height: 120px;
-        margin: 20px 0 0 20px;
+        margin: 20px 0 0 0;
+        width: auto;
     }
 
     .header-menu {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .css-logo {
